@@ -1,0 +1,75 @@
+
+.scarousel {
+    display: none;
+
+}
+
+.slick-initialized {
+    display: block;
+}
+
+.slick-slide{
+	width: 100%;
+  padding: 25px;
+}
+
+
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 25%;
+
+    display: block;
+
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    -webkit-transform: translate(0, -45%);
+    -ms-transform: translate(0, -45%);
+    transform: translate(0, -45%);
+    cursor: default;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:before,
+.slick-next:before
+{
+
+    font-size: 60px;
+    line-height: 1;
+    opacity: 0.75;
+    /*color: white; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before
+{
+    /*content: '←';*/
+    content:'<';
+    color: black;
+    font-size: 60px;
+    font-weight: 300px;
+}
+
+.slick-prev{
+  left: 10px;
+  z-index: 100;
+}
+
+.slick-next
+{
+    right: 10px;
+    z-index: 100;
+}
+
+.slick-next:before
+{
+  /*  content: '→';*/
+  content:'>';
+  color: black;
+  font-size: 60px;
+  font-weight: 300px;
+}
