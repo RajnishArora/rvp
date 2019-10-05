@@ -11,6 +11,7 @@
 .slick-slide{
 	width: 100%;
   padding: 25px;
+  box-sizing: border-box;
 }
 
 
@@ -18,10 +19,8 @@
 .slick-next
 {
     position: absolute;
-    top: 25%;
-
+    top: 20%;
     display: block;
-
     width: 60px;
     height: 60px;
     padding: 0;

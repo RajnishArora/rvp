@@ -13,15 +13,6 @@ class rvp_create_cpt{
 
     $show_checkbox = false;
 
-/*
-      $options = get_option( 'rvpplugin_settings' );
-      $show_checkbox = esc_html( $options['show_checkbox'] );
-      if ( $show_checkbox == '1' ) {
-          $show_checkbox = true;
-      } else {
-          $show_checkbox = false;
-      }
-*/
         if( !post_type_exists('rvp') ){
                 register_post_type('rvp', array(
                       'supports' => array('title'),

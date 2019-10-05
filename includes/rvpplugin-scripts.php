@@ -21,7 +21,7 @@ function rvpplugin_frontend_scripts() {
     'rvpplugin-frontend', RVPPLUGIN_URL . 'frontend/js/rvpplugin-frontend.js', [], time(),true
   );
 
-  if( is_single() ){
+//  if( is_single() ){
     wp_enqueue_script('rvpplugin-slick');
     wp_enqueue_script('rvpplugin-frontend');
 
@@ -32,11 +32,11 @@ function rvpplugin_frontend_scripts() {
     }
 
     $rvp_arr = array(
-      'slides_to_show' => $slides_to_view  
+      'slides_to_show' => $slides_to_view
     );
     wp_localize_script('rvpplugin-frontend', 'rvpplugin_data',$rvp_arr);
 
-  }
+//  }
 
 }
 add_action( 'wp_enqueue_scripts', 'rvpplugin_frontend_scripts', 100 );

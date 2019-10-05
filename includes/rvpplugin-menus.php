@@ -20,16 +20,6 @@ function rvpplugin_settings_pages()
     'dashicons-visibility',
     100
   );
-/*
-  add_submenu_page(
-    'rvpplugin',
-    __( 'RVPS Settings', 'rvpplugin' ),
-    __( 'Settings', 'rvpplugin' ),
-    'manage_options',
-    'rvpplugin-setting',
-    'rvpplugin_settings_subpage_markup'
-  );
-*/
 
 }
 add_action( 'admin_menu', 'rvpplugin_settings_pages' );
@@ -42,14 +32,3 @@ function rvpplugin_add_settings_link( $links ) {
 }
 $filter_name = "plugin_action_links_" . plugin_basename( __FILE__ );
 add_filter( $filter_name, 'rvpplugin_add_settings_link' );
-
-/*
-function rvpplugin_settings_subpage_markup()
-{
-  // Double check user capabilities
-  if ( !current_user_can('manage_options') ) {
-      return;
-  }
-
-}
-*/
