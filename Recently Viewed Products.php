@@ -4,7 +4,7 @@ Plugin Name: Recently Viewed Products
 Plugin URI: https://github.com/rajnisharora/rvp
 Description: Plugin to view recently viewed products in Woocommerce e-store
 Version: 1.0.0
-Contributors: rajnisharora
+Contributors: rajarora795
 Author: Rajnish Arora
 Author URI:
 License: GPLv2 or later

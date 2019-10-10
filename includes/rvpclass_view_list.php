@@ -14,7 +14,7 @@ if( !class_exists('rvp_view_list')){
 
 		public function rvp_show($no_of_prods,$array_viewed_ids,$wrap_slider){
 			$count = 0;
-			//print_r( $array_viewed_ids);
+			//print_r( $no_of_prods);
 			if($no_of_prods <= 0 ){ //show all products
 					if( is_product()){
 							array_shift($array_viewed_ids);
@@ -24,10 +24,11 @@ if( !class_exists('rvp_view_list')){
 					if(is_product()){
 							$array_ids_to_show = array_slice($array_viewed_ids,1,$no_of_prods);
 					} else {
-							$array_ids_to_show = $array_viewed_ids;
+							$array_ids_to_show = array_slice($array_viewed_ids,0,$no_of_prods);
 					}
 
-								// slice to array from 1 so that current item doesnot shows in rvp
+					// slice to array from 1 so that current item doesnot shows in rvp in product page
+					// slice from 0 to slice it till no of products
 			}
 
 
@@ -129,6 +130,7 @@ if( !class_exists('rvp_view_list')){
 				$no_to_pass = $no_of_prods;
 				$wrap_slider = false;
 			}
+
 
 			if(is_user_logged_in()){
 				$this->rvp_view_logged_in($no_to_pass,$wrap_slider);

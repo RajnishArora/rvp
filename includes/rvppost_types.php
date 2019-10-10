@@ -11,6 +11,7 @@ class rvp_create_cpt{
    public function create_cpt() {
     //  Post Type
 
+    // this variable controls whether to shoe in dashboard
     $show_checkbox = false;
 
         if( !post_type_exists('rvp') ){
@@ -20,10 +21,11 @@ class rvp_create_cpt{
                       'show_ui' => true,
                       'show_in_menu'  => $show_checkbox,
                       'labels' => array(
-                        'name' => 'Rvps',
-                        'add_new_item' => 'Add New Product',
-                        'all_items' => 'All Products',
-                        'singular_name' => 'Rvp'
+                        'name' => _x('Rvps','post type general name','rvpplugin'),
+                        'singular_name' => _x('Rvp','post type singular name','rvpplugin'),
+                        'add_new_item' => __('Add New Product','rvpplugin'),
+                        'all_items' => __('All Products','rvpplugin')
+
                       ),
                       'menu_icon' => 'dashicons-visibility'
                ));
