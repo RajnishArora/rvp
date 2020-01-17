@@ -162,7 +162,9 @@ function rvpplugin_settings_text_input_callback() {
     $no_of_prods = esc_html( $options['no_of_prods'] );
   }
     $checkbox1 = '';
-		$checkbox1 = esc_html( $options['checkbox'] );
+    if( isset( $options['checkbox'] )  ){
+		    $checkbox1 = esc_html( $options['checkbox'] );
+    }
     //echo $checkbox1;
     if( $checkbox1 == '1' ){
         echo '<input  type="text" id="rvpplugin_customtext" name="rvpplugin_settings[no_of_prods]" value="' . $no_of_prods . '"  disabled />';
@@ -261,8 +263,9 @@ function rvpplugin_slider_slides_to_show_callback() {
   }
 
   $checkbox1 = '';
-
+  if( isset( $options['checkbox'] )  ){
 		$checkbox1 = esc_html( $options['checkbox'] );
+  }
     //echo $checkbox1;
     if( $checkbox1 == '1' ){
         echo '<input type="text" id="rvpplugin_slides_to_show" name="rvpplugin_settings[slides_to_show]" value="' . $slides_to_show . '" />';
@@ -283,8 +286,9 @@ function rvpplugin_slider_text_input_callback() {
   }
 
   $checkbox1 = '';
-
+  if( isset( $options['checkbox'] )  ){
 		$checkbox1 = esc_html( $options['checkbox'] );
+  }
     //echo $checkbox1;
     if( $checkbox1 == '1' ){
         echo '<input type="text" id="rvpplugin_slidertext" name="rvpplugin_settings[no_of_prods_slider]" value="' . $no_of_prods_slider . '" />';
