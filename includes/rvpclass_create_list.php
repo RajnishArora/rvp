@@ -76,10 +76,14 @@ if( !class_exists('rvp_create_list')){
         		$rvpguest = 'rvpguest';
 						$cookie_time = 30;
 
-						if( isset( $this->options['cookie_time'] )  ){
+						if( isset( $this->options['cookie_time'] ) && $this->options['cookie_time'] !=''  ){
 								$cookie_time = esc_html( $this->options['cookie_time'] );
+								$cookie_days = $cookie_time * 86400 ;
+						} else {
+								$cookie_days = 30 * 86400 ;
 						}
-						$cookie_days = $cookie_time * 86400 ;
+
+						
         		if( !isset( $_COOKIE['rvpguest'] ) ) {
         			//print_r("cookie empty");
         			$rvpval = array($product_id);

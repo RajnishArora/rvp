@@ -4,7 +4,7 @@ Contributors: rajarora795
 Donate link: PayPal.me/rajarora795
 Tags: Woocommerce recently viewed products, Recently viewed products, Wc Recently viewed products, Recent Products
 Requires at least: 4.0
-Tested up to: 5.0
+Tested up to: 5.3.2
 Stable tag: trunk
 Requires PHP: 7.0
 License: GPLv2 or later
