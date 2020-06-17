@@ -50,7 +50,7 @@ if( !class_exists('rvp_view_list')){
 					_e( '<section class="recent_products">' ) ;
 					_e('<h2>'. $this->rvp_label.'</h2>');
 					if ($wrap_slider == "true" || $wrap_slider == '1' ){
-							_e( '<ul class="products scarousel">');
+							_e( '<ul class="products rvpscarousel">');
 
 					} elseif($wrap_slider == "false" || $wrap_slider == '0' ){
 							_e( '<ul class="products">');

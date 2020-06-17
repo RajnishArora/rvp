@@ -1,5 +1,5 @@
-
-.scarousel {
+/*
+.rvpscarousel {
     display: none;
 
 }
@@ -8,15 +8,17 @@
     display: block;
 }
 
-.slick-slide{
+*/
+
+.rvpscarousel .slick-slide{
 	width: 100%;
   padding: 25px;
   box-sizing: border-box;
 }
 
 
-.slick-prev,
-.slick-next
+.rvpscarousel .slick-prev,
+.rvpscarousel .slick-next
 {
     position: absolute;
     top: 20%;
@@ -32,8 +34,8 @@
     outline: none;
     background: transparent;
 }
-.slick-prev:before,
-.slick-next:before
+.rvpscarousel .slick-prev:before,
+.rvpscarousel .slick-next:before
 {
 
     font-size: 60px;
@@ -44,7 +46,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev:before
+.rvpscarousel .slick-prev:before
 {
     /*content: '←';*/
     content:'<';
@@ -53,18 +55,18 @@
     font-weight: 300px;
 }
 
-.slick-prev{
+.rvpscarousel .slick-prev{
   left: 10px;
   z-index: 100;
 }
 
-.slick-next
+.rvpscarousel .slick-next
 {
     right: 10px;
     z-index: 100;
 }
 
-.slick-next:before
+.rvpscarousel .slick-next:before
 {
   /*  content: '→';*/
   content:'>';

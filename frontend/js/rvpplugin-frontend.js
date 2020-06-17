@@ -5,7 +5,7 @@ window.$ = window.jQuery = $ = jQuery  ;
 class Scarousel{
 
   constructor() {
-      this.els = $('.scarousel');
+      this.els = $('.rvpscarousel');
       this.slidesToShow = rvpplugin_data.slides_to_show;
       this.initSlider();
   }
